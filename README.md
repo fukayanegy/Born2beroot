@@ -7,28 +7,28 @@ su -
 ```
 ### group関連
 1. グループの作成  
-```
-sudo groupadd user42
-```
+	```
+	sudo groupadd user42
+	```
 2. ユーザーをグループに所属させる
-```
-sudo usermod -aG user42 [name]
-```
-複数いっぺんに所属させる場合、','を使用して区切る  
-```
-sudo usermod -aG user42,sudo [name]
-```
+	```
+	sudo usermod -aG user42 [name]
+	```
+	複数いっぺんに所属させる場合、','を使用して区切る  
+	```
+	sudo usermod -aG user42,sudo [name]
+	```
 3. グループに所属しいるのかの確認
-userが所属しているgroupを確認する  
-```
-id [name]
-```
-groupに所属しているuserを確認する  
-```
-getent group [group_name]
-```
+	userが所属しているgroupを確認する  
+	```
+	id [name]
+	```
+	groupに所属しているuserを確認する  
+	```
+	getent group [group_name]
+	```
 3. オプションについて
-'a'オプションは追加、'G'オプションはグループの指定を意味する  
+	'a'オプションは追加、'G'オプションはグループの指定を意味する  
 ### password関連  
 #### password policy について
 1. 30日ごとに変更される
