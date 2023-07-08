@@ -63,6 +63,11 @@ PASS_MAX_DAYS 30
 PASS_MIN_DAYS 2
 PASS_WARN_AGE 7
 ```
+### passwword policy変更前のアカウントの変更
+```
+change -m 2 -M 30 -W 7 [name]
+change -m 2 -M 30 -W 7 root
+```
 ## windows11環境の注意すべきコマンド
 ### reboot
 通常のLinux環境ではrebootコマンドを使用して再起動を行うが、windows環境ではrebootコマンドは使用できない  
