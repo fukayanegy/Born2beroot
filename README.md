@@ -1,4 +1,20 @@
 # born2beroot
+## windows11環境での作業の進め方
+### 常にrootとして作業する
+```
+su -
+[password]
+```
+### group関連
+#### group作成
+1. グループの作成  
+```
+sudo groupadd user42
+```
+2. ユーザーをグループに所属させる
+```
+sudo usermod -aG user42 [name]
+```
 ## windows11環境の注意すべきコマンド
 ### reboot
 通常のLinux環境ではrebootコマンドを使用して再起動を行うが、windows環境ではrebootコマンドは使用できない  
